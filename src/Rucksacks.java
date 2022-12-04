@@ -31,7 +31,6 @@ public class Rucksacks {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println("===Solving for part 1===");
         Scanner scanner = new Scanner(new FileReader("res/rucksacks.txt"));
         int sumPriorities = 0;
         while (scanner.hasNextLine()) {
@@ -41,10 +40,8 @@ public class Rucksacks {
             char common = findCommon(line1, line2);
             int num = priority(common);
             sumPriorities += num;
-            System.out.println(common + " with " + "priority " + num);
         }
 
-        System.out.println("===Solving for part 2===");
         scanner = new Scanner(new FileReader("res/rucksacks.txt"));
         int sumBadges = 0;
         while (scanner.hasNextLine()) {
@@ -54,7 +51,6 @@ public class Rucksacks {
             char common = findCommon(line1, line2, line3);
             int num = priority(common);
             sumBadges += num;
-            System.out.println(common + " with " + "priority " + num);
         }
 
         System.out.println("Part 1 sum: " + sumPriorities);
