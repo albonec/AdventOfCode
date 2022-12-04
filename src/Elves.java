@@ -45,9 +45,9 @@ public class Elves {
             }
         }
 
-        System.out.println(maxTotal);
-        System.out.println(secondMaxTotal);
-        System.out.println(thirdMaxTotal);
-        System.out.println(maxTotal+secondMaxTotal+thirdMaxTotal);
+        System.out.println("Greatest: " + maxTotal);
+        System.out.println("Second: " + secondMaxTotal);
+        System.out.println("Third: " +thirdMaxTotal);
+        System.out.println("Sum: " + (maxTotal+secondMaxTotal+thirdMaxTotal));
     }
 }
